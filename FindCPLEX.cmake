@@ -1,4 +1,6 @@
 # - Try to find CPLEX
+# http://www-03.ibm.com/software/products/us/en/ibmilogcpleoptistud/
+#
 # Once done, this will define
 #
 #  CPLEX_INCLUDE_DIRS   - where to find scip/scip.h, etc.
