@@ -3,11 +3,11 @@
 #
 # Once done, this will define
 #
-#  SOPLEX_INCLUDE_DIRS   - where to find scip/scip.h, etc.
-#  SOPLEX_LIBRARIES      - List of libraries when using scip.
-#  SOPLEX_FOUND          - True if scip found.
+#  SOPLEX_INCLUDE_DIRS   - where to find soplex.h, etc.
+#  SOPLEX_LIBRARIES      - List of libraries when using soplex.
+#  SOPLEX_FOUND          - True if soplex found.
 #
-# An includer may set SOPLEX_ROOT to a scip installation root to tell
+# An includer may set SOPLEX_ROOT to a soplex installation root to tell
 # this module where to look.
 #
 # Variables used by this module, they can change the default behaviour and
