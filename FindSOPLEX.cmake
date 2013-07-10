@@ -1,4 +1,6 @@
 # - Try to find SOPLEX
+# See http://soplex.zib.de/ for more information on SoPlex
+#
 # Once done, this will define
 #
 #  SOPLEX_INCLUDE_DIRS   - where to find scip/scip.h, etc.
