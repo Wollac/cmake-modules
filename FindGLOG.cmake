@@ -4,10 +4,10 @@
 # Once done, this will define
 #
 #  GLOG_INCLUDE_DIRS   - where to find glog/logging.h, etc.
-#  GLOG_LIBRARIES      - List of libraries when using scip.
+#  GLOG_LIBRARIES      - List of libraries when using glog.
 #  GLOG_FOUND          - True if scip found.
 #
-# An includer may set GLOG_ROOT to a scip installation root to tell
+# An includer may set GLOG_ROOT to a glog installation root to tell
 # this module where to look.
 #
 # Author:
