@@ -1,4 +1,6 @@
 # - Try to find GLOG
+# http://code.google.com/p/google-glog/
+#
 # Once done, this will define
 #
 #  GLOG_INCLUDE_DIRS   - where to find glog/logging.h, etc.
