@@ -1,7 +1,20 @@
 cmake-modules
 =============
 
-My collection of CMake modules
+This is a collection of CMake modules that I've written for some software
+developement in the area of combinatorial optimzation and integer programming.
+
+How to use
+==========
+
+Tell CMake where the modules are located by adding the following line to your
+root CMakeLists.txt file:
+
+    list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
+  
+All the modules for find_package check for corresponding PKG_ROOT CMake or
+environment variable. If it is set, the module prefers this location.
+
 
 License
 =======
