@@ -6,7 +6,7 @@ My collection of CMake modules
 License
 =======
 
-The modules that I wrote myself are all subject to boost Boost Software License:
+All the modules are subject to the Boost Software License:
 
 >Boost Software License - Version 1.0 - August 17th, 2003
 >
