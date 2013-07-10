@@ -1,4 +1,6 @@
-# - Try to find SCIP http://scip.zib.de/
+# - Try to find SCIP
+# See http://scip.zib.de/ for more information on SCIP
+#
 # Once done, this will define
 #
 #  SCIP_INCLUDE_DIRS   - where to find scip/scip.h, etc.
