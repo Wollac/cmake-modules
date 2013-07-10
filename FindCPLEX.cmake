@@ -1,16 +1,16 @@
 # - Try to find CPLEX
-# http://www-03.ibm.com/software/products/us/en/ibmilogcpleoptistud/
+# http://www.ibm.com/software/products/us/en/ibmilogcpleoptistud/
 #
 # Once done, this will define
 #
-#  CPLEX_INCLUDE_DIRS   - where to find scip/scip.h, etc.
-#  CPLEX_LIBRARIES      - List of libraries when using scip.
-#  CPLEX_FOUND          - True if scip found.
+#  CPLEX_INCLUDE_DIRS   - where to find ilcplex/ilocplex.h, etc.
+#  CPLEX_LIBRARIES      - List of libraries when using cplex.
+#  CPLEX_FOUND          - True if cplex found.
 #
-#  CPLEX_VERSION        - The version of scip found (x.y.z)
-#  CPLEX_VERSION_MAJOR  - The major version of scip
-#  CPLEX_VERSION_MINOR  - The minor version of scip
-#  CPLEX_VERSION_PATCH  - The patch version of scip
+#  CPLEX_VERSION        - The version of cplex found (x.y.z)
+#  CPLEX_VERSION_MAJOR  - The major version of cplex
+#  CPLEX_VERSION_MINOR  - The minor version of cplex
+#  CPLEX_VERSION_PATCH  - The patch version of cplex
 #
 # An includer may set CPLEX_ROOT to a cplex installation root to tell
 # this module where to look.
@@ -24,7 +24,7 @@
 
 include(LibFindMacros)
 
-# Dependencies
+# Depends on Threads
 SET(CMAKE_THREAD_PREFER_PTHREAD)
 libfind_package(CPLEX Threads)
 
@@ -53,6 +53,7 @@ foreach(search ${_CPLEX_SEARCHES})
   FIND_LIBRARY(CPLEX_LIBRARY NAMES cplex ${${search}} PATH_SUFFIXES lib lib/x86-64_sles10_4.1/static_pic)
 endforeach()
 
+# Extract the version from the cpxconst.h
 IF(CPLEX_INCLUDE_DIR AND EXISTS "${CPLEX_INCLUDE_DIR}/ilcplex/cpxconst.h")
   FILE(STRINGS "${CPLEX_INCLUDE_DIR}/ilcplex/cpxconst.h" CPXCONST_H REGEX "^ *#define CPX_VERSION_.*$")
 
